@@ -9,14 +9,14 @@ FROM AppleStore;
 SELECT prime_genre, SUM(rating_count_tot) as apps_rated
 FROM AppleStore
 GROUP BY prime_genre
-ORDER BY apps_rated DESC 
-LIMIT 1; 
+ORDER BY apps_rated DESC;
 -- QUESTION 3: Which is the genre with more apps?
 SELECT prime_genre, COUNT(track_name) as apps
 FROM AppleStore
 GROUP BY prime_genre
 ORDER BY apps DESC 
 LIMIT 1; 
+
 -- QUESTION 4:  Which is the one with less?
 SELECT prime_genre, COUNT(track_name) as apps 
 FROM AppleStore
@@ -83,6 +83,6 @@ ORDER BY price asc;
 
 --The most rated apps are FREE, but the better rated apps are not neccesarily the most rated. 
 --While the most expensive apps are not neccesarily the most rated nor even the better rating apps, the free apps are almost 3x times more downloaded than the 0.99 apps
--- Based on the previous queries, the more users an app has, the more ratings it might get. Usually these are free apps. So users might considering this a filter for deciding whether to download an app or not. 
+-- Based on the previous queries, the more users an app has, the more ratings it might get, usually these are free apps. So users might considering this as a filter for deciding whether to download an app or not. 
 
 
