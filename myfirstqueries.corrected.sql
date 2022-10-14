@@ -36,7 +36,7 @@ ORDER BY user_rating_ver DESC
 LIMIT 10;
 
 # 7. Take a look on the data you retrieved in the question 5. Give some insights
-/* The game with highest rating count is Pinterest, with a rating count total over 1 Million*/
+/* The game with highest rating count is Facebook, with almost 3 Million reviews*/
 
 # 8. Take a look on the data you retrieved in the question 6. Give some insights.
 /* The game with highest rating by user is Putty 3D, with a user rating of 5 stars. People really like 3D Building */
